@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+results/
+datasets/mnist/mnist_test_seq.npy
+datasets/mnist/train-images-idx3-ubyte.gz
