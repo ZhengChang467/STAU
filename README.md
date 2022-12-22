@@ -42,6 +42,7 @@ Bair Robot Pushing
     $ python bash_bair_test.py
 ```
 ### Train
+Moving MNIST
 ```bash
     $ python STAU_run.py --dataset mnist --is_training True
 ```
