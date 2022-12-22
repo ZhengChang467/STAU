@@ -1,4 +1,4 @@
-# STAU (submitted to TPAMI)
+# STAU (Extended from [MAU](https://github.com/ZhengChang467/MAU), submitted to TPAMI)
 
 Zheng Chang,
 Xinfeng Zhang,
@@ -6,8 +6,8 @@ Shanshe Wang,
 Siwei Ma,
 Wen Gao.
 
-Official PyTorch Code for **"MAU: A Motion-Aware Unit for Video Prediction and
-Beyond"** [[paper]](https://arxiv.org/pdf/2204.09456.pdf)
+Official PyTorch Code for **"STAU: A SpatioTemporal-Aware Unit for Video
+Prediction and Beyond"** [[paper]](https://arxiv.org/pdf/2204.09456.pdf)
 
 ### Requirements
 - PyTorch 1.7
