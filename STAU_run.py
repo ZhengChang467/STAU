@@ -10,16 +10,21 @@ import core.trainer as trainer
 # -----------------------------------------------------------------------------
 parser = argparse.ArgumentParser(description='STAU')
 parser.add_argument('--dataset', type=str, default='mnist')
+parser.add_argument('--is_training', type=str, default='True')
 args_main = parser.parse_args()
 args_main.tied = True
 if args_main.dataset == 'mnist':
     from configs.mnist_configs import configs
 
-parser = configs()
-parser.add_argument('--device', type=str, default='cuda')
-args = parser.parse_args()
-args.tied = True
 
+parser_dataset = configs()
+parser_dataset.add_argument('--device', type=str, default='cuda')
+args = parser_dataset.parse_args()
+args.tied = True
+if args_main.is_training == 'True':
+    args.is_training = 'True'
+else:
+    args.is_training = 'False'
 
 
 def schedule_sampling(eta, itr, channel, batch_size):

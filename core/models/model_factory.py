@@ -57,7 +57,7 @@ class Model(object):
         frames_tensor = torch.FloatTensor(frames).to(self.configs.device)
         mask_tensor = torch.FloatTensor(mask).to(self.configs.device)
 
-        next_frames,_ = self.network(frames_tensor, mask_tensor)
+        next_frames = self.network(frames_tensor, mask_tensor)
         ground_truth = frames_tensor
 
         batch_size = next_frames.shape[0]
