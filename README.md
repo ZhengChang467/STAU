@@ -1,4 +1,4 @@
-# STAU (Extended from [MAU](https://github.com/ZhengChang467/MAU), submitted to TPAMI)
+# STAU (Extended from [MAU](https://github.com/ZhengChang467/MAU), published in TPAMI2025)
 
 Zheng Chang,
 Xinfeng Zhang,
